@@ -8,7 +8,7 @@ public class Main {
             int sourceRadix = scanner.nextInt();
             String number = scanner.next();
             int targetRadix = scanner.nextInt();
-            int decimalNumber = 0;
+            int decimalNumber;
             if (sourceRadix == 1) {
                 decimalNumber = number.length();
             } else if (sourceRadix == 10) {
