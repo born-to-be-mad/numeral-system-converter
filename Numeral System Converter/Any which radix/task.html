@@ -6,14 +6,14 @@
 
 <p>As there are 26 Latin letters and 10 digits, the maximum base is 26 + 10 = 36.</p>
 
-<p>To convert a number from the source base to the target base, follow the following steps:</p>
+<p>To convert a number from the source base to the target base, follow the following steps:</p>
 
 <ul>
 	<li>If the given number is not decimal, you can convert it to a decimal using method <code class="java">Integer.parseInt(number, sourceBase)</code> that returns a decimal representation of a number.</li>
-	<li>After that, you can use method <code class="java">Integer.toString(decimalNumber, newBase)</code> that takes a decimal number and converts it to the  target base.</li>
+	<li>After that, you can use method <code class="java">Integer.toString(decimalNumber, newBase)</code> that takes a decimal number and converts it to the  target base.</li>
 </ul>
 
-<p>Notice that the minimum radix is 1: the number <code class="java">N</code> in radix 1 contains a symbol <code class="java">1</code> N times. Methods described above don’t work if <code class="java">sourceBase</code> or <code class="java">newBase</code> equals to 1. In that case, you should convert the numbers manually.</p>
+<p>Notice that the minimum radix is 1: the number <code class="java">N</code> in radix 1 contains a symbol <code class="java">1</code> N times. Methods described above don’t work if <code class="java">sourceBase</code> or <code class="java">newBase</code> equals to 1. In that case, you should convert the numbers manually.</p>
 
 <p>For instance:</p>
 
@@ -55,7 +55,7 @@
 
 <pre><code class="language-no-highlight">5</code></pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong>Example 3:</strong></p>
 
 <p>Input:</p>
 
