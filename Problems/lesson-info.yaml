@@ -33,3 +33,5 @@ content:
 - Fix compile-time errors
 - Geometric cube
 - Counter
+- Classes for Hospital
+- String to double conversion
