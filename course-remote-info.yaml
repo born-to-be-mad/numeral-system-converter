@@ -18,6 +18,8 @@ stages:
   step: 5315
 topics:
   0:
+  - title: Units of information
+    theory_id: 6865
   - title: Binary numbers
     theory_id: 5544
   - title: Converting from binary to decimal
@@ -60,6 +62,14 @@ topics:
     theory_id: 3512
   - title: Conditional statement
     theory_id: 3503
+  - title: Ternary operator
+    theory_id: 3506
+  - title: The for-loop
+    theory_id: 3505
+  - title: The while and do-while loops
+    theory_id: 3498
+  - title: Branching statements
+    theory_id: 3507
   - title: Switch statement
     theory_id: 3504
   - title: IntelliJ IDEA
@@ -75,12 +85,6 @@ topics:
     theory_id: 3511
   - title: String
     theory_id: 3523
-  - title: The for-loop
-    theory_id: 3505
-  - title: The while and do-while loops
-    theory_id: 3498
-  - title: Branching statements
-    theory_id: 3507
   - title: Iterating over arrays
     theory_id: 3602
   4:
@@ -99,8 +103,6 @@ topics:
   - title: StringBuilder
     theory_id: 3812
   5:
-  - title: Units of information
-    theory_id: 6865
   - title: What is an exception
     theory_id: 3497
   - title: Hierarchy of exceptions
