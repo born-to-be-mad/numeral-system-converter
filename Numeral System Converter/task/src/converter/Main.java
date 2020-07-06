@@ -15,16 +15,26 @@ public class Main {
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            int sourceRadix = scanner.nextInt();
-            String input = scanner.next();
-            int targetRadix = scanner.nextInt();
+            try {
+                int sourceRadix = scanner.nextInt();
+                if (sourceRadix < 1 || sourceRadix > 36) {
+                    throw new IllegalStateException("Source radix should be greater than 1");
+                }
+                String input = scanner.next();
+                int targetRadix = scanner.nextInt();
+                if (targetRadix < 1 || targetRadix > 36) {
+                    throw new IllegalStateException("Target radix should be greater than 1");
+                }
 
-            String[] strings = input.split("\\.");
-            String targetIntegerPart = convertIntegerPart(sourceRadix, strings[0], targetRadix);
-            String targetFractionalNumber = targetRadix > 1 && strings.length > 1
-                    ? convertFractionalPart(sourceRadix, strings[1], targetRadix)
-                    : "";
-            System.out.println(targetIntegerPart + "." + targetFractionalNumber);
+                String[] strings = input.split("\\.");
+                String targetIntegerPart = convertIntegerPart(sourceRadix, strings[0], targetRadix);
+                String targetFractionalNumber = targetRadix > 1 && strings.length > 1
+                        ? convertFractionalPart(sourceRadix, strings[1], targetRadix)
+                        : "";
+                System.out.println(targetIntegerPart + "." + targetFractionalNumber);
+            } catch (Exception e) {
+                System.out.printf("An error occured: %s%n", e.getMessage());
+            }
         }
     }
 
